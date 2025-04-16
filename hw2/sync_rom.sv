@@ -13,7 +13,7 @@ module sync_rom (input  logic clk,
 	
 	// load binary values from a dummy text file into ROM
 	initial
-		$readmemh("/Users/aadithyamanoj/Documents/GitHub/371/hw2/truthtable4.txt", rom);
+		$readmemh("\Users\Aadit\GitHub\371\hw2\truthtable4.txt", rom);
 	
 	// synchronously reads out data from requested addr
 	always_ff @(posedge clk)
